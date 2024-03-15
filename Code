@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main () {
+    int age = 0;
+    
+    std::cout << "Enter your age: \n";
+    std::cin >>age;
+
+    if (age >= 0 && age <= 18) {
+        std::cout << "You're still a minor\n";
+    }
+    else if ( age >= 18 && age <= 24) {
+        std::cout << "You're a young adult\n";
+    }
+    else if (age >= 25 && age <= 64) {
+        std::cout << "You are in your prime\n";
+    }
+    else {
+        std::cout << "You are a senior citizen\n";
+    }
+    return 0;
+}
